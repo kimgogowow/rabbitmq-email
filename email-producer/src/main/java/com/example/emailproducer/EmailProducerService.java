@@ -21,7 +21,9 @@ public class EmailProducerService {
         EmailRequestDTO emailVerification = new EmailRequestDTO(email, "this is subject","this is body",verificationCode);
         rabbitTemplate.convertAndSend(RabbitMQConfig.QUEUE_NAME, emailVerification);  // Use the queue name defined in config
     }
-
+    /*
+    a random 6 digits code generator
+     */
     private String generateVerificationCode() {
         SecureRandom random = new SecureRandom();
         int code = 100000 + random.nextInt(900000);
