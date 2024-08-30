@@ -19,7 +19,7 @@ public class EmailService {
     public void sendEmail(String email, String body){
 
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("kimwu9419@gmail.com");
+        message.setFrom("kimxxxx@gmail.com");//same as ur application.properties
         message.setTo(email);
         message.setSubject("verification");
         message.setText(body);

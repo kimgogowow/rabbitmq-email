@@ -12,7 +12,6 @@ import java.io.Serializable;
 @Getter
 @Setter
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "@class")
-//@JsonTypeName("com.example.Final.Project.Forum.dto.EmailRequestDTO")
 @JsonTypeName("com.example.emailproducer.dto.EmailRequestDTO")
 public class EmailRequestDTO implements Serializable {
     private String to;
